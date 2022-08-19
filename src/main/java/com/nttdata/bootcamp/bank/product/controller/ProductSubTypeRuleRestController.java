@@ -1,11 +1,7 @@
 package com.nttdata.bootcamp.bank.product.controller;
 
-import com.nttdata.bootcamp.bank.product.model.document.ProductSubType;
 import com.nttdata.bootcamp.bank.product.model.document.ProductSubTypeRule;
 import com.nttdata.bootcamp.bank.product.service.impl.ProductSubTypeRuleServiceImpl;
-import com.nttdata.bootcamp.bank.product.service.inte.ProductSubTypeRuleServiceInte;
-import com.nttdata.bootcamp.bank.product.service.inte.ProductSubTypeServiceInte;
-import com.nttdata.bootcamp.bank.product.service.inte.ProductlServiceInte;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +11,9 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/api/productsubtyperule")
-public class ProductSubTypeRuleController
+public class ProductSubTypeRuleRestController
 {
-    private static final Logger log = LoggerFactory.getLogger(ProductSubTypeRuleController.class);
+    private static final Logger log = LoggerFactory.getLogger(ProductSubTypeRuleRestController.class);
 
     @Autowired
     private ProductSubTypeRuleServiceImpl CurrencyTypeServiceInte;

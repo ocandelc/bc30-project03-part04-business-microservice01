@@ -2,7 +2,6 @@ package com.nttdata.bootcamp.bank.product.controller;
 
 import com.nttdata.bootcamp.bank.product.model.document.Product;
 import com.nttdata.bootcamp.bank.product.service.impl.ProductServiceImpl;
-import com.nttdata.bootcamp.bank.product.service.inte.ProductlServiceInte;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/product")
 public class ProductRestController {
 
     private static final Logger log = LoggerFactory.getLogger(ProductRestController.class);

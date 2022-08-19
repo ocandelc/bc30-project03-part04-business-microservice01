@@ -1,11 +1,7 @@
 package com.nttdata.bootcamp.bank.product.controller;
 
-import com.nttdata.bootcamp.bank.product.model.dao.inte.CurrencyTypeDaoInte;
-import com.nttdata.bootcamp.bank.product.model.document.CurrencyType;
-import com.nttdata.bootcamp.bank.product.model.document.Product;
-import com.nttdata.bootcamp.bank.product.service.impl.CurrencyTypeServiceImpl;
-import com.nttdata.bootcamp.bank.product.service.inte.CurrencyTypeServiceInte;
-import com.nttdata.bootcamp.bank.product.service.inte.ProductlServiceInte;
+import com.nttdata.bootcamp.bank.product.model.document.Rule;
+import com.nttdata.bootcamp.bank.product.service.impl.RuleServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,34 +10,34 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/api/currencytype")
-public class CurrencyTypeController
+@RequestMapping("/api/rulecontroller")
+public class RuleRestController
 {
-    private static final Logger log = LoggerFactory.getLogger(CurrencyTypeController.class);
+    private static final Logger log = LoggerFactory.getLogger(RuleRestController.class);
 
     @Autowired
-    private CurrencyTypeServiceImpl CurrencyTypeServiceInte;
+    private RuleServiceImpl CurrencyTypeServiceInte;
 
     @PostMapping("create")
-    public Mono<CurrencyType> create(@RequestBody final CurrencyType product) {
+    public Mono<Rule> create(@RequestBody final Rule product) {
         log.debug("Begin RestController create Product");
         return CurrencyTypeServiceInte.create(product);
     }
 
     @GetMapping
-    public Flux<CurrencyType> readAll() {
+    public Flux<Rule> readAll() {
         log.debug("Begin RestController readAll Product");
         return CurrencyTypeServiceInte.readAll();
     }
 
     @GetMapping("findByid/{id}")
-    public Mono<CurrencyType> findByCodeProduct(@PathVariable String codeProduct) {
+    public Mono<Rule> findByCodeProduct(@PathVariable String codeProduct) {
         log.debug("Begin RestController findByCodeProduct Product");
-        return CurrencyTypeServiceInte.findByCodeId(codeProduct);
+        return CurrencyTypeServiceInte.findById(codeProduct);
     }
 
     @PutMapping("update/{id}")
-    public Mono<CurrencyType> updateById(@RequestBody final CurrencyType product, @PathVariable("id") final String id) {
+    public Mono<Rule> updateById(@RequestBody final Rule product, @PathVariable("id") final String id) {
         log.debug("Begin RestController updateById Product");
         return CurrencyTypeServiceInte.updateById(id, product);
     }
