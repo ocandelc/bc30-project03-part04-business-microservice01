@@ -26,6 +26,7 @@ public class ProductServiceImpl implements ProductlServiceInte {
                 .doOnNext(a -> log.info(a.toString()))
                 .doAfterTerminate(() -> log.info("Finish create Product"));
         v.subscribe();
+
         return v;
     }
 

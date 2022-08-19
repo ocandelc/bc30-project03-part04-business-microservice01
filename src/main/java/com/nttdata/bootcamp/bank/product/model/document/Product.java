@@ -14,17 +14,11 @@ public class Product {
     private String id;
     private String codeProduct;
     private String name;
-    //private String description;
-    //private String bankAccountNumber;
-    //private String interbankAccountNumber;
-    private String status;
-    private String auditUserInsertName;
-    private String auditUserInsertDate;
-    private String auditUserInsertP;
-    private String auditUserUpdateName;
-    private String audituserUpdateDate;
-    private String auditUserUpdateIp;
-    private int idProductSubType;
-    private int idCurrencyType;
+    private String description;
+    private String bankAccountNumber;
+    private String interbankAccountNumber;
+    private String state;
+    private String codeProductSubtype;
+    private String codeCurrencyType;
 
 }

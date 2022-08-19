@@ -27,12 +27,6 @@ public class SpringBootMicroserviceProductApplication implements CommandLineRunn
     @Override
     public void run(String... args) throws Exception {
         log.info("Init Product");
-        // code to fix database and generate sample data
-        /*Flux.just(
-                new Product("2","credito empresarial", "credito", "1", "0", "0", "", "", "", "",1, 1)
-                )
-                .flatMap(c -> dao.save(c))
-                .subscribe(c -> log.info("Insert: " + c.getId() + " " + c.getName()));*/
     }
 
 }
