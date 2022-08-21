@@ -1,3 +1,15 @@
+/**
+ * Resumen.
+ * Objeto                   : CurrencyTypeRestController.java
+ * Descripción              : Clase de controller para invocar los métodos con rest api.
+ * Fecha de Creación        : 04/08/2022.
+ * Proyecto de Creación     : Bootcamp-30.
+ * Autor                    : Oscar Candela.
+ * ---------------------------------------------------------------------------------------------------------------------------
+ * Modificaciones
+ * Motivo                   Fecha             Nombre                  Descripción
+ * ---------------------------------------------------------------------------------------------------------------------------
+ */
 package com.nttdata.bootcamp.bank.product.controller;
 
 import com.nttdata.bootcamp.bank.product.model.document.CurrencyType;
@@ -8,7 +20,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
+/**
+ * Clase de controller para invocar los métodos con rest api.
+ */
 @RestController
 @RequestMapping("/api/currencytype")
 public class CurrencyTypeRestController
