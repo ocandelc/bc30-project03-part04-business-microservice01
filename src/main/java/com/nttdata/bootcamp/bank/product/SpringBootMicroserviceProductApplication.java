@@ -1,23 +1,15 @@
 package com.nttdata.bootcamp.bank.product;
 
-import com.nttdata.bootcamp.bank.product.model.dao.inte.ProductDaoInte;
-import com.nttdata.bootcamp.bank.product.model.document.Product;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import reactor.core.publisher.Flux;
-
-import java.util.Date;
 
 @SpringBootApplication
 public class SpringBootMicroserviceProductApplication implements CommandLineRunner {
 
-    @Autowired
-    private ProductDaoInte dao;
     private static final Logger log = LoggerFactory.getLogger(SpringBootMicroserviceProductApplication.class);
 
     public static void main(String[] args) {
