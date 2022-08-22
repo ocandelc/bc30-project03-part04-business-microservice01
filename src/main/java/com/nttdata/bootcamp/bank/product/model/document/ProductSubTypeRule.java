@@ -26,8 +26,8 @@ public class ProductSubTypeRule
 {
     @Id
     private String id;
-    private String value;
-    private String status;
-    private String idProductType;
-    private String idRule;
+    private String state;
+    private String codeRule;
+    private String codeProductSubtype;
+    private String codeProductSubtypeRule;
 }

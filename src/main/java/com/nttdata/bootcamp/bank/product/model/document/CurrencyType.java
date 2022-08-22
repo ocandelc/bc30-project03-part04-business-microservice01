@@ -29,6 +29,6 @@ public class CurrencyType
     private String id;
     private String description;
     private String name;
-    private String idProductType;
+    private String codeCurrencyType;
 
 }

@@ -29,6 +29,8 @@ public class ProductSubType
     private String id;
     private String description;
     private String name;
-    private String idProductType;
+    private String state;
+    private String codeProductSubtype;
+    private String codeProductType;
 
 }

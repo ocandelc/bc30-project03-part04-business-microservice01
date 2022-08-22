@@ -27,8 +27,9 @@ public class Rule
 
     @Id
     private String id;
-    private String description;
+    private String codeRule;
     private String name;
+    private String description;
     private String value;
-    private String status;
+    private String state;
 }
